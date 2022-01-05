@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# lucashong website
 
 Personal website built with React.
 
 ## Deployed Website
 
-[View the Website here](https://lucashong.dev)
+[View the website here](https://lucashong.dev)
