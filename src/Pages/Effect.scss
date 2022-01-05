@@ -1,0 +1,175 @@
+// settings
+$text-color: #ffb902;
+$line-color: #ffb902;
+$line-size: 7;
+
+html {
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+//
+//  Corners mixin
+//
+@mixin line-corners(
+	$line-color: cyan,
+	$line-size: 7,
+	$line-type: out,
+	$line-distance: 40
+) {
+	position: absolute;
+	width: 100%;
+
+	transition-duration: 0.3s;
+
+	// arrows
+	&:before,
+	&:after {
+		content: '';
+
+		position: absolute;
+
+		width: $line-size + px;
+		height: $line-size + px;
+
+		border-color: $line-color;
+		border-style: solid;
+
+		// will-change: transform, opacity;
+		transition-duration: 0.3s;
+		transform: translateZ(0);
+	}
+
+	// top corners
+	&.top {
+		&:before {
+			border-width: 2px 0 0 2px;
+		}
+		&:after {
+			border-width: 0px 0px 0 0;
+		}
+	}
+
+	// bottom corners
+	&.bottom {
+		&:before {
+			border-width: 0 0 0px 0px;
+		}
+		&:after {
+			border-width: 0 2px 2px 0;
+		}
+	}
+
+	// ORIGINAL
+	// @if $line-type == out {
+	// 	&:before {
+	// 		left: 0;
+	// 	}
+	// 	&:after {
+	// 		right: 0;
+	// 	}
+	// 	&.top {
+	// 		top: 0;
+	// 	}
+	// 	&.bottom {
+	// 		bottom: $line-size + px;
+	// 	}
+	// }
+	@if $line-type == out {
+		&:before {
+			left: -$line-distance * 2 + px;
+		}
+		&:after {
+			right: -$line-distance * 2 + px;
+		}
+		&.top {
+			top: 0;
+		}
+		&.bottom {
+			// bottom: $line-size + px;
+			bottom: 0;
+		}
+	}
+}
+
+@mixin line-corners-hover($line-size: 7, $line-type: out, $line-distance: 40) {
+	@if $line-type == in {
+		&:before {
+			left: -$line-distance + px;
+		}
+		&:after {
+			right: -$line-distance + px;
+		}
+		&.top {
+			top: $line-distance + px;
+		}
+		&.bottom {
+			bottom: ($line-distance + $line-size) + px;
+		}
+	}
+}
+
+// style: borders out (edge)
+@mixin line-corners-out($line-color: cyan, $line-size: 7) {
+	.corners {
+		@include line-corners($line-color, $line-size, out);
+	}
+	&:hover {
+		.corners {
+			@include line-corners-hover($line-size, in);
+		}
+	}
+}
+
+//
+//
+// @end: Corners mixin
+//
+
+//
+// magic buttons
+//
+.bttn {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+
+	// text
+	span {
+		display: block;
+		padding: 30px;
+
+		font-size: 30px;
+		color: $text-color;
+		text-transform: uppercase;
+
+		// transition: all 0.3s ease-out;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	// include corners
+	&.out {
+		@include line-corners-out(cyan);
+	}
+}
+
+//
+//  Animations
+//
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}

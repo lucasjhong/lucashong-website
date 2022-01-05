@@ -1,0 +1,79 @@
+@import '../Pages/Main.scss';
+
+.resume {
+	display: flex;
+	justify-content: center;
+	height: 120vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	// color: #95d1cc;
+
+	p {
+		color: white;
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	h3 {
+		margin-top: 48px;
+		color: $text;
+	}
+}
+
+.resume-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.resume-left {
+	width: 70%;
+}
+
+.resume-right {
+	width: 25%;
+}
+
+.react-sweet-progress-symbol {
+	color: white;
+}
+
+.react-sweet-progress {
+	.react-sweet-progress-line {
+		background-color: #4c4c4c;
+	}
+}
+
+////////////////////
+// MOBILE
+////////////////////
+@media screen and (max-width: 960px) {
+	.resume {
+		height: 240vh;
+		width: 80%;
+
+		.resume-content {
+			.MuiTimeline-root {
+				padding: 0;
+				margin: 0;
+			}
+
+			.MuiTypography-alignLeft {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.resume-content {
+		flex-direction: column;
+	}
+
+	.resume-left {
+		width: 100%;
+	}
+
+	.resume-right {
+		width: 100%;
+	}
+}
