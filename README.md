@@ -4,4 +4,4 @@ Personal website built with React.
 
 ## Deployed Website
 
-[View the Website here](https://)
+[View the Website here](https://lucashong.dev)
