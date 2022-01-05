@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/lucashong-website/static/css/main.bb47dd11.chunk.css",
+    "main.js": "/lucashong-website/static/js/main.86962d5c.chunk.js",
+    "main.js.map": "/lucashong-website/static/js/main.86962d5c.chunk.js.map",
+    "runtime-main.js": "/lucashong-website/static/js/runtime-main.c1211049.js",
+    "runtime-main.js.map": "/lucashong-website/static/js/runtime-main.c1211049.js.map",
+    "static/css/2.1601f761.chunk.css": "/lucashong-website/static/css/2.1601f761.chunk.css",
+    "static/js/2.8b3ba816.chunk.js": "/lucashong-website/static/js/2.8b3ba816.chunk.js",
+    "static/js/2.8b3ba816.chunk.js.map": "/lucashong-website/static/js/2.8b3ba816.chunk.js.map",
+    "static/js/3.9b3c3254.chunk.js": "/lucashong-website/static/js/3.9b3c3254.chunk.js",
+    "static/js/3.9b3c3254.chunk.js.map": "/lucashong-website/static/js/3.9b3c3254.chunk.js.map",
+    "index.html": "/lucashong-website/index.html",
+    "static/css/2.1601f761.chunk.css.map": "/lucashong-website/static/css/2.1601f761.chunk.css.map",
+    "static/css/main.bb47dd11.chunk.css.map": "/lucashong-website/static/css/main.bb47dd11.chunk.css.map",
+    "static/js/2.8b3ba816.chunk.js.LICENSE.txt": "/lucashong-website/static/js/2.8b3ba816.chunk.js.LICENSE.txt",
+    "static/media/abella-preview.3b41c759.gif": "/lucashong-website/static/media/abella-preview.3b41c759.gif",
+    "static/media/budgettix-preview.7e1a913a.gif": "/lucashong-website/static/media/budgettix-preview.7e1a913a.gif",
+    "static/media/profile.bc870fde.png": "/lucashong-website/static/media/profile.bc870fde.png",
+    "static/media/resume.01d7b467.pdf": "/lucashong-website/static/media/resume.01d7b467.pdf",
+    "static/media/volume-adapt-preview-small.3291c588.gif": "/lucashong-website/static/media/volume-adapt-preview-small.3291c588.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1211049.js",
+    "static/css/2.1601f761.chunk.css",
+    "static/js/2.8b3ba816.chunk.js",
+    "static/css/main.bb47dd11.chunk.css",
+    "static/js/main.86962d5c.chunk.js"
+  ]
+}
