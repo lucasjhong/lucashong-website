@@ -12,7 +12,7 @@ import {
 import { Progress } from 'react-sweet-progress';
 import 'react-sweet-progress/lib/style.css';
 import './Resume.scss';
-import resume from '../resume.pdf';
+import resume from '../lucashong-resume.pdf';
 
 const Resume = () => {
 	const progressProps = {
