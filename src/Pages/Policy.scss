@@ -1,0 +1,19 @@
+$primary: #3fc1c9;
+$secondary: #95d1cc;
+
+.policy {
+	height: 50vh;
+	width: 60%;
+	margin: 20vh auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	h2 {
+		color: $primary;
+	}
+
+	h4 {
+		color: $secondary;
+	}
+}
