@@ -105,7 +105,7 @@ const Main = () => {
 							Single page e-commerce application built with React, paired with a
 							database that receives and returns information of different
 							products, user favourites, reviews, and orders via REST API built
-							fromm Node.js and Express.js.
+							fromm Node.js and Express.js. Stripe API implemented as a method of processing payment.
 						</p>
 
 						<GitHubIcon
@@ -133,7 +133,7 @@ const Main = () => {
 						</p>
 						<p className='content-description'>
 							React application built as an improvement to the existing ticket
-							trading platforms such as SeatGeet and Ticketmaster. Implemented a
+							trading platforms such as SeatGeet and Stubhub. Gathered data from different ticket vendor's APIs and parsed it to display a full list of events/tickets available. Implemented a
 							better serach/filter structure and UI improvement to display range
 							of ticket prices for events in a more transparent and effortless
 							manner.
