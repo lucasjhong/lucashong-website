@@ -102,10 +102,9 @@ const Main = () => {
 							abellabakery.ca
 						</p>
 						<p>
-							Single page e-commerce application built with React, paired with a
-							database that receives and returns information of different
-							products, user favourites, reviews, and orders via REST API built
-							fromm Node.js and Express.js. Stripe API implemented as a method of processing payment.
+						Full stack e-commerce single page application utilizing React, Redux and MaterialUI, while employing Stripe’s API and infrastructure
+to process payments. Designed and implemented REST API with Node.js and Express.js, to manage data such as product information, user information/
+authentication, orders, payments, favourites and reviews, stored on a NoSQL Firestore database.
 						</p>
 
 						<GitHubIcon
@@ -132,11 +131,10 @@ const Main = () => {
 							budgettix.netlify.app
 						</p>
 						<p className='content-description'>
-							React application built as an improvement to the existing ticket
-							trading platforms such as SeatGeet and Stubhub. Gathered data from different ticket vendor's APIs and parsed it to display a full list of events/tickets available. Implemented a
-							better serach/filter structure and UI improvement to display range
-							of ticket prices for events in a more transparent and effortless
-							manner.
+						React web application that merges ticket listings from different vendors such as SeatGeek and Stubhub, by parsing data from each
+APIs to display the combined results based on user's search inputs. Implemented an improved search/filter structure to display more accurate and relevant results, as well as UI improvements which
+displayed further in-depth information about each event in a compact and accessible manner, resulting in a more efficient search
+experience for the user.
 						</p>
 						<GitHubIcon
 							className='icon'
